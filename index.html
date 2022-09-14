@@ -21,32 +21,21 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
   <body>
-    <!-- Start your project here-->
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- End your project here-->
 
+  </body>
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+
+    // API call
+    let queryUrl = "https://api.openweathermap.org/data/2.5/weather?";
+    let lat = "lat=-34.61315&";
+    let lon = "lon=-58.37723&";
+    let apiOptions = "units=metric&exclude=minutely,alert&";
+    let apiKey = "appid=04faadc275e05cc55872f11b835b581f";
+    let file = queryUrl + lat + lon + apiOptions + apiKey;
+
+    </script>
   </body>
 </html>
