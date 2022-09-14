@@ -54,7 +54,13 @@
       let hour4 = data.hourly[4].temp;
       let hour5 = data.hourly[5].temp;
 
-      console.log(hour4);
+      // Weather daily data
+      let tomorrowTemp = Math.round(data.daily[0].temp.day);
+      let dATTemp = Math.round(data.daily[1].temp.day);
+      let tomorrowMain = data.daily[0].weather[0].main;
+      let dATTempMain = data.daily[1].weather[0].main;
+
+      console.log(dATTempMain);
 
 
     });
