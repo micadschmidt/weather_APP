@@ -23,11 +23,11 @@
   <body>
     <div class="container my-5">
       <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-7">
 
           <!--Main current data-->
-          <div class="card shadow-1-strong">
-            <div class="card-header text-center">
+          <div class="card shadow-3-strong">
+            <div class="card-header text-center border-0">
               <p class="h2 mb-1" id="wrapper-name"></p>
               <p class="mb-1" id="wrapper-description"></p>
               <p class="display-1 mb-1" id="wrapper-temp"></p>
@@ -36,7 +36,49 @@
               <span>Humidity: <span id="wrapper-humidity"></span></span>
             </div>
             <!--Hourly forecast-->
-            <div class="card-body"></div>
+            <div class="card-body border-top border-bottom"></div>
+
+              <div class="row">
+
+                <div class="col-2">
+
+                  <strong class="d-block">Now</strong>
+                  <img id="wrapper-icon-hour-now" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour-now"></strong>
+                </div>
+
+                <div class="col-2">
+                  <strong id="wrapper-time1" class="d-block"></strong>
+                  <img id="wrapper-icon-hour1" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour1"></strong>
+                </div>
+
+                <div class="col-2">
+                  <strong id="wrapper-time2" class="d-block"></strong>
+                  <img id="wrapper-icon-hour2" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour2"></strong>
+                </div>
+
+                <div class="col-2">
+                  <strong id="wrapper-time3" class="d-block"></strong>
+                  <img id="wrapper-icon-hour3" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour3"></strong>
+                </div>
+
+                <div class="col-2">
+                  <strong id="wrapper-time4" class="d-block"></strong>
+                  <img id="wrapper-icon-hour4" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour4"></strong>
+                </div>
+
+                <div class="col-2">
+                  <strong id="wrapper-time5" class="d-block"></strong>
+                  <img id="wrapper-icon-hour5" src="" alt="">
+                  <strong class="d-block" id="wrapper-hour5"></strong>
+                </div>
+
+              </div>
+
             <!--Daily forecast-->
             <div class="card-body"></div>
           </div>
