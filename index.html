@@ -213,7 +213,12 @@
       let iconFullyUrlDAT = iconBaseUrl + iconCodeDAT +iconFormat;
       document.getElementById("wrapper-icon-dAT").src = iconFullyUrlDAT;
 
-      
+      // Icons hourly
+
+      // Hour now
+      let iconHourNow = data.hourly[0].weather[0].icon;
+      let iconFullyUrlHourNow = iconBaseUrl + iconHourNow +iconFormat;
+      document.getElementById("wrapper-icon-hour-now").src = iconFullyUrlHourNow;
 
 
 
