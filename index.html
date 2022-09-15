@@ -194,6 +194,28 @@
       document.getElementById("wrapper-forecast-temp-tomorrow").innerHTML = tomorrowTemp + "°C";
       document.getElementById("wrapper-forecast-temp-dAT").innerHTML = dATTemp + "°C";
 
+      // Icons
+      let iconBaseUrl = "http://openweathermap.org/img/wn/";
+      let iconFormat = ".png";
+
+      // Today
+      let iconCodeToday = data.current.weather[0].icon;
+      let iconFullyUrlToday = iconBaseUrl + iconCodeToday +iconFormat;
+      document.getElementById("wrapper-icon-today").src = iconFullyUrlToday;
+
+      //Tomorrow
+      let iconCodeTomorrow = data.daily[0].weather[0].icon;
+      let iconFullyUrlTomorrow = iconBaseUrl + iconCodeTomorrow +iconFormat;
+      document.getElementById("wrapper-icon-tomorrow").src = iconFullyUrlTomorrow;
+
+      //DAT Day After Tomorrow
+      let iconCodeDAT= data.daily[1].weather[0].icon;
+      let iconFullyUrlDAT = iconBaseUrl + iconCodeDAT +iconFormat;
+      document.getElementById("wrapper-icon-dAT").src = iconFullyUrlDAT;
+
+      
+
+
 
     });
 
