@@ -23,11 +23,11 @@
   <body>
     <div class="container my-5">
       <div class="row d-flex justify-content-center text-white">
-        <div class="col-xs-7">
+        <div class="col-lg-6 col-md-8 col-sm-10">
 
           <!--Main current data-->
           <div id="wrapper-bg" class="card bg-image shadow-3-strong" style="background-image:url('img/rain.gif')">
-            <div class="card-header text-center border-0">
+            <div class="card-header text-center border-0 mb-3">
               <p class="h2 mb-1" id="wrapper-name"></p>
               <p class="mb-1" id="wrapper-description"></p>
               <p class="display-1 mb-1" id="wrapper-temp"></p>
@@ -79,39 +79,39 @@
             </div>
 
             <!--Daily forecast-->
-            <div class="card-body">
-              <div class="row">
+            <div class="card-body px-5">
+              <div class="row align-items-center">
                 <div class="col-md-6">
                   <strong>Today</strong>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
                   <img id="wrapper-icon-today" src="" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-end">
                   <span id="wrapper-forecast-temp-today"></span>
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-md-6">
                   <strong>Tomorrow</strong>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
                   <img id="wrapper-icon-tomorrow" src="" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-end">
                   <span id="wrapper-forecast-temp-tomorrow"></span>
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-md-6">
                   <strong>Day after tomorrow</strong>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
                   <img id="wrapper-icon-dAT" src="" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-end">
                   <span id="wrapper-forecast-temp-dAT"></span>
                 </div>
               </div>
@@ -263,15 +263,13 @@
         case "Clear":
           document.getElementById("wrapper-bg").style.backgroundImage = "url('img/clear.gif')";
           break;
-        case "Fog":
-          document.getElementById("wrapper-bg").style.backgroundImage = "url('img/fog.gif')";
-          break;
         case "Thunderstorm":
           document.getElementById("wrapper-bg").style.backgroundImage = "url('img/thunderstorm.gif')";
           break;
+        default:
+          document.getElementById("wrapper-bg").style.backgroundImage = "url('img/clouds.gif')";
+          break;
       }
-
-
     });
 
     </script>
